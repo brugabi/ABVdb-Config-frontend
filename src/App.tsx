@@ -1,11 +1,14 @@
-import Header from "./components/Header"
+
+import { Login } from "./pages/Login"
 
 
 function App() {
 
   return (
     <>
-    <Header></Header>
+  
+    <Login></Login>
+    
     </>
   )
 }
