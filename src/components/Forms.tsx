@@ -2,42 +2,47 @@ import { useState } from "react"
 import { Button } from "./Button"
 import { Input } from "./Input"
 import { Icone } from "./Icone";
+import { useForm } from "react-hook-form";
 
+interface FormData{
+    email:string,
+    senha: string,
+}
 export const Forms = () => {
-    const [email, setEmail] = useState("");
-    const [senha, setSenha] = useState("");
 
-    const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setEmail(event.target.value)
-    }
+    const {
+        register,        
+        handleSubmit,   
+        formState: { errors },
+        clearErrors,
+      } = useForm<FormData>();
 
-    const handleSenhaChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setSenha(event.target.value)
-    }
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        console.log(email, senha)
+
+    const onSubmit = (data: FormData) => {
+        console.log(data);
     }
     return(
-    <form onSubmit={handleSubmit} className="flex justify-around flex-col w-full h-full ">
+    <form onSubmit={handleSubmit(onSubmit)} className="flex justify-around flex-col w-full h-full ">
         <div className="items-center flex flex-col">
             <Icone className="size-48"></Icone>
             <h2 className="border-b-4 rounded pb-2 text-4xl inline-block border-primary-light">Login</h2>
         </div>
         <div className="flex gap-4 flex-col w-full h-1/2 items-center">
             <Input 
-                value={email}
+                {...register("email", { required: "Email é obrigatório" })}
                 name="Email"
                 type="text"
-                placeholder="Insira seu email"
-                onChange={handleEmailChange}></Input>        
+                placeholder="Insira seu email">   
+                </Input>  
+                {errors.email && <span className="text-red-500">{errors.email.message}</span>}
             <Input 
-                value={senha}
+                {...register("senha", { required: "Senha é obrigatória" })}
                 name="Senha"
                 type="password"
-                placeholder="Insira sua senha"
-                onChange={handleSenhaChange}></Input>
+                placeholder="Insira sua senha"></Input>
+                                {errors.email && <span className="text-red-500">{errors.email.message}</span>}
+
             <Button className="h-10 w-48 mt-6" type="submit">Logar</Button>
         </div>
     </form>
