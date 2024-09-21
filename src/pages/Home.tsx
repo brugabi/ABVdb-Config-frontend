@@ -9,7 +9,7 @@ export const Home = () => {
         navigate(url);
     }
     return(
-        <div className="h-screen w-full flex flex-col justify-center bg-neutral">
+        <div className="h-screen w-full flex flex-col justify-center bg-neutral text-3xl">
             <Header></Header>
             <div className="flex flex-row flex-wrap content-center w-4/6  m-auto
             items-center justify-center h-full">
@@ -24,10 +24,10 @@ export const Home = () => {
     </div>
             <div className="h-5/6 w-3/6 text-white bg-primary cursor-pointer hover:bg-primary-light"
             onClick={() => onBlockClick("/opcoes")} >
-            <Bloco className="h-3/6 w-full"
+            <Bloco className="h-3/6 w-full flex-col-reverse"
                              
                              title="Não era o que procurava? Acesse aqui mais opções"
-                             img=""></Bloco>
+                             img="src/assets/svgs/file-circle-question-solid.svg"></Bloco>
             <Bloco className="h-3/6 w-full flex-col"
                              img="src\assets\svgs\tools-folder.svg"></Bloco>
                              <h3>Mais Ferramentas</h3>

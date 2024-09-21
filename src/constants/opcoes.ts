@@ -21,14 +21,14 @@ export const Opt = [{
 },
 {
     title : "Acessar o Genome Detective",
-    img : "",
+    img : "src/assets/design inicial site adm.png",
 },
 {
     title: "Validação dos dados tratados",
-    img : "",
+    img : "src/assets/svgs/circle-check-regular(1).svg",
 },
 {
     title: "Anotação das proteínas",
-    img: "",
+    img: "src/assets/design inicial site adm(1).png",
 }
 ]
