@@ -20,7 +20,7 @@ export const Forms = () => {
         console.log(email, senha)
     }
     return(
-    <form onSubmit={handleSubmit} className="flex justify-around flex-col w-full h-full ">
+    <form onSubmit={handleSubmit} className="flex justify-around flex-col w-full h-full">
         <div className="items-center flex flex-col">
             <Icone className="size-48"></Icone>
             <h2 className="border-b-4 rounded pb-2 text-4xl inline-block border-primary-light">Login</h2>

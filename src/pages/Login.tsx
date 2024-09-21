@@ -10,10 +10,10 @@ export const Login = () => {
             <Logo src="src/assets/g2bc.png" className="absolute bottom-0 left-8 rounded-lg top-4 w-64 h-32"></Logo>
             <Logo src="src/assets/logoUneb-removebg-preview.png" className="absolute right-8 rounded-lg bg-neutral top-4 w-64 h-32"></Logo>
             </div>
-            <div className=" flex justify-center items-center h-4/5 w-full m-auto">
+            <div className="flex justify-center items-center h-4/5 w-full m-auto">
             <div className="h-full w-2/6 bg-secondary flex flex-col gap-12 text-center justify-center items-center">
             <h2 className="font-extrabold flex items-center text-4xl gap-2">
-                <img src="src\assets\genetic-test-report-svgrepo-com.png" className="w-16"></img>
+                <img src="src\assets\logoSite.png" className="w-16"></img>
                 ABVdb&Config
             </h2>
                 <img src="src\assets\login-background.jpg" alt="" />
