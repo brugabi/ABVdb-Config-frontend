@@ -2,6 +2,7 @@ interface BlocoProps{
     title?: string,
     className: string,
     img : string,
+    
     onClick?: () => void
 }
 

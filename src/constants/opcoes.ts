@@ -17,5 +17,18 @@ export const Opt = [{
 },
 {
     title: "Validação dos dados tratados",
-    img: "src/assets/svgs/check-circle-svgrepo-com.svg"
-}]
+    img: "src/assets/svgs/check-circle-svgrepo-com.svg",
+},
+{
+    title : "Acessar o Genome Detective",
+    img : "",
+},
+{
+    title: "Validação dos dados tratados",
+    img : "",
+},
+{
+    title: "Anotação das proteínas",
+    img: "",
+}
+]

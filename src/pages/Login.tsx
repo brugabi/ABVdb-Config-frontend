@@ -13,7 +13,7 @@ export const Login = () => {
             <div className="flex justify-center items-center h-4/5 w-full m-auto">
             <div className="h-full w-2/6 bg-secondary flex flex-col gap-12 text-center justify-center items-center">
             <h2 className="font-extrabold flex items-center text-4xl gap-2">
-                <img src="src\assets\logoSite.png" className="w-16"></img>
+                <img src="src\assets\svgs\iconePrincipal.svg" className="w-16"></img>
                 ABVdb&Config
             </h2>
                 <img src="src\assets\login-background.jpg" alt="" />

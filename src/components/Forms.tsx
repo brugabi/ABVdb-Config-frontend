@@ -41,7 +41,7 @@ export const Forms = () => {
                 name="Senha"
                 type="password"
                 placeholder="Insira sua senha"></Input>
-                                {errors.email && <span className="text-red-500">{errors.email.message}</span>}
+                {errors.email && <span className="text-red-500">{errors.email.message}</span>}
 
             <Button className="h-10 w-48 mt-6" type="submit">Logar</Button>
         </div>
