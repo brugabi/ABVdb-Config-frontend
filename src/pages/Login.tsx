@@ -1,15 +1,14 @@
 import { useNavigate } from "react-router-dom"
 import { Footer } from "../components/Footer"
 import { Forms } from "../components/Forms"
-import { Logo } from "../components/Logo"
 
 export const Login = () => {
     return(
 
     <div className="bg-primary w-screen h-screen flex flex-col justify-around ">
         <div className="h-auto flex justify-between mt-4">
-            <Logo src="src/assets/g2bc.png" className="absolute bottom-0 left-8 rounded-lg top-4 w-64 h-32"></Logo>
-            <Logo src="src/assets/logoUneb-removebg-preview.png" className="absolute right-8 rounded-lg bg-neutral top-4 w-64 h-32"></Logo>
+            <img src="src/assets/g2bc.png" className="absolute bottom-0 left-8 rounded-lg top-4 w-64 h-28"></img>
+            <img src="src/assets/logoUneb-removebg-preview.png" className="absolute right-8 rounded-lg bg-neutral top-4 w-64 h-28"></img>
             </div>
             <div className="flex justify-center items-center h-4/5 w-full m-auto">
             <div className="h-full w-2/6 bg-secondary flex flex-col gap-12 text-center justify-center items-center">

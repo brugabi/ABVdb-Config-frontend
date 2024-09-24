@@ -17,7 +17,7 @@ export const SequenciaDonwload = () => {
                         <option key={s} value={s}>{s}</option>
                     )}
                 </select>
-                <button className="bg-primary hover:bg-primary-light cursor-pointer text-neutral p-4 h-10 flex text-center items-center justify-center">
+                <button className="bg-primary hover:bg-primary-light cursor-pointer text-neutral p-4 h-10 flex text-center items-center justify-center shadow-md">
                     Baixar
                 </button>
             </div>
