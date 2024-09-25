@@ -1,7 +1,14 @@
+interface Opcao {
+    title: string,
+    img: string,
+    rota?:string,
+    link?:string,
+}
+
 export const Opt = [{
     title: "Repositório de Arquivos",
-    img: "src/assets/svgs/google-drive-svgrepo-com.svg",
-    rota: "/"
+    img: "src/assets/driveIcon.png",
+    link: "https://drive.google.com/drive/folders/1jhEb0sqxsORQl8WzSihZt9Bx2GKch176?usp=sharing"
 },
 {
    title: "Histórico de operações",

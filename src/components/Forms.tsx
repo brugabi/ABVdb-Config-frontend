@@ -88,7 +88,7 @@ export const Forms = () => {
           </div>
           {errors.senha && <span className="text-red-500 text-xs">{errors.senha.message}</span>}
         </label>
-        <Button className="h-10 w-48 mt-6" type="submit">
+        <Button className="h-10 w-48 mt-6 " type="submit">
           Logar
         </Button>
       </div>

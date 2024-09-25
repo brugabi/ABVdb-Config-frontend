@@ -11,9 +11,9 @@ export const Home = () => {
     return(
         <div className="h-screen w-full flex flex-col justify-center bg-neutral text-3xl">
             <Header></Header>
-            <div className="flex flex-row flex-wrap content-center w-4/6  m-auto
+            <div className="flex flex-row flex-wrap content-center w-4/6 h-4/6 m-auto
             items-center justify-center">
-            <div className=" h-5/6 w-3/6 shadow-xl">
+            <div className=" h-full w-3/6 shadow-xl">
             <Bloco className="h-3/6 w-full bg-secondary flex-col font-bold" 
                              title="Comece com o pipeline de obtenção dos dados!"
                              img="src\assets\svgs\gears.svg"></Bloco>
@@ -22,7 +22,7 @@ export const Home = () => {
                              title="Ou acesse aqui o ABVdb!" 
                              img="src\assets\svgs\database.svg"></Bloco>
     </div>
-            <div className="h-5/6 w-3/6 text-white bg-primary cursor-pointer hover:bg-primary-light shadow-xl"
+            <div className="h-full w-3/6 text-white bg-primary cursor-pointer hover:bg-primary-light shadow-xl"
             onClick={() => onBlockClick("/opcoes")} >
             <Bloco className="h-3/6 w-full flex-col-reverse"
                              

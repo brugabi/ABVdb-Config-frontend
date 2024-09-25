@@ -1,3 +1,4 @@
+import { Button } from "../components/Button"
 import { Footer } from "../components/Footer"
 import Header from "../components/Header"
 import { sequencias } from "../constants/sequencias"
@@ -17,9 +18,9 @@ export const SequenciaDonwload = () => {
                         <option key={s} value={s}>{s}</option>
                     )}
                 </select>
-                <button className="bg-primary hover:bg-primary-light cursor-pointer text-neutral p-4 h-10 flex text-center items-center justify-center shadow-md">
+                <Button className= "cursor-pointer p-4 h-10 flex text-center items-center justify-center shadow-md">
                     Baixar
-                </button>
+                </Button>
             </div>
             <Footer></Footer>
         </div>

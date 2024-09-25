@@ -8,9 +8,9 @@ interface BlocoProps{
 
 export const Bloco = ({title, img, className, onClick} : BlocoProps) => {
     return(
-    <div onClick={onClick} className={`items-center justify-center text-center flex ${className}`}>
+    <div onClick={onClick} className={`items-center justify-center text-center flex  ${className}`}>
         <h2 className="">{title}</h2>
-        <img className="w-3/6 h-3/6" src={img} alt="" />
+        <img className=" h-3/6" src={img} alt="" />
     </div>
     )
 }

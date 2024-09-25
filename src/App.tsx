@@ -4,9 +4,16 @@ import { Home } from "./pages/Home"
 import { Opcoes } from "./pages/Opcoes"
 import { SequenciaDonwload } from "./pages/SequenciaDownload"
 import { ErrorPage } from "./pages/ErrorPage"
+import { useState } from "react"
 
+interface user{
+  email: string,
+  senha: string,
+}
 
 function App() {
+  const [user, setUser] = useState<user>();
+  
 
   return (
     <>

@@ -6,6 +6,16 @@ import { Opt } from "../constants/opcoes"
 
 export const Opcoes = () => {
     const navigate = useNavigate();
+
+    const handleClick = (link: string | undefined, rota: string | undefined) => {
+        if (link) {
+          window.open(link, "_blank");
+        } else {
+            if(rota)
+          navigate(rota);
+        }
+      };
+
     return(
         <div className="h-screen w-full flex flex-col justify-center text-center items-center bg-neutral">
             <Header></Header>
@@ -15,10 +25,10 @@ export const Opcoes = () => {
                 {Opt.map( o => 
                 <Bloco 
                     key={o.title}
-                    className="w-72 h-52 flex-col text-xl font-semibold bg-secondary hover:bg-secondary-light cursor-pointer" 
+                    className="w-72 h-52 flex-col text-xl gap-6 font-semibold bg-secondary hover:bg-secondary-light cursor-pointer" 
                     title={o.title} 
                     img={o.img}
-                    onClick={() => navigate(o.rota)}
+                    onClick={() => handleClick(o.link, o.rota)}
                     >
                 </Bloco>
                 )}
