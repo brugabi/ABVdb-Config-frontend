@@ -30,7 +30,7 @@ export const Opt = [{
 {
     title : "Acessar o Genome Detective",
     img : "src/assets/design inicial site adm.png",
-    rota: "/"
+    link: "https://www.genomedetective.com"
 },
 {
     title: "Validação dos dados tratados",
