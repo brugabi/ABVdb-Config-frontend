@@ -18,7 +18,7 @@ export const Opt = [{
 {
     title: "Baixar sequências XML",
     img: "src/assets/svgs/download-window-svgrepo-com.svg",
-    rota: "/download"
+    rota: "/sequenciasbaixar"
 
 },
 {
