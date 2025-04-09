@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens:{
+        ct: "96rem",
+      },
       colors: {
         'primary': {
           light: '#1a5f74',
