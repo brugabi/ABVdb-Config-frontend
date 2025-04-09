@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { usuario } from "../api/usuario";
 import { Button } from "./Button";
 import { useEffect, useRef, useState } from "react";
-
+import userIcon from "../assets/icone.png"
 interface FormData {
   email: string;
   senha: string;
@@ -50,12 +50,12 @@ export const Forms = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex justify-around flex-col w-full h-full">
-      <div className="items-center flex flex-col">
-        <img  src="src/assets/icone.png "className="size-48 rounded-full " />
+      <div className="items-center justify-center flex flex-col">
+        <img  src={userIcon} className=" size-7/12 object-contain rounded-full " />
         <h2 className="border-b-4 rounded pb-2 text-4xl inline-block border-primary-light">Login</h2>
       </div>
-      <div className="flex gap-4 flex-col w-full h-1/2 items-center">
-        <label className="text-left w-3/5 font-bold text-2xl flex-col flex gap-3">
+      <div className="flex gap-2 flex-col w-full h-1/2 items-center">
+        <label className="text-left w-3/5 font-bold text-xl flex-col flex gap-1 md:text-2xl">
           Email
           <input
             className="h-10 p-2 border-2 font-normal border-black text-xl"
@@ -65,11 +65,11 @@ export const Forms = () => {
           />
           {errors.email && <span className="text-red-500 text-xs">{errors.email.message}</span>}
         </label>
-        <label className="text-left w-3/5 font-bold text-2xl flex-col flex gap-3 ">
+        <label className="text-left w-3/5 font-bold text-xl flex-col flex gap-1 md:text-2xl">
           Senha
           <div className="relative w-full">
             <input
-              className="h-10 p-2 border-2 font-normal border-black text-xl w-full"
+              className="h-10 p-2 border-2 font-normal border-black w-full md:text-xl"
               type={showPassword ? "text" : "password"}
               placeholder="Insira sua senha"
               minLength={4}
