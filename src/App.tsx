@@ -20,7 +20,7 @@ function App() {
     <BrowserRouter>
     <Routes>
         <Route element={<Login></Login>} path="/login"></Route>
-        <Route element={<Home></Home> } path="/home"/>
+        <Route element={<Home></Home> } path="/"/>
         <Route element={<Opcoes></Opcoes>} path="/opcoes"></Route>
         <Route element={<SequenciaDonwload></SequenciaDonwload>} path="/sequenciasbaixar"></Route>
         <Route element={<ErrorPage></ErrorPage>} path="*"></Route>

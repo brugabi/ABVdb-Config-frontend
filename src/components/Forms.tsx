@@ -55,7 +55,7 @@ export const Forms = () => {
         <h2 className="border-b-4 rounded pb-2 text-4xl inline-block border-primary-light">Login</h2>
       </div>
       <div className="flex gap-2 flex-col w-full h-1/2 items-center">
-        <label className="text-left w-3/5 font-bold text-xl flex-col flex gap-1 md:text-2xl">
+        <label className="text-left w-3/5 font-semibold text-xl flex-col flex gap-1 md:text-xl">
           Email
           <input
             className="h-10 p-2 border-2 font-normal border-black text-xl"
@@ -65,7 +65,7 @@ export const Forms = () => {
           />
           {errors.email && <span className="text-red-500 text-xs">{errors.email.message}</span>}
         </label>
-        <label className="text-left w-3/5 font-bold text-xl flex-col flex gap-1 md:text-2xl">
+        <label className="text-left w-3/5 font-semibold text-lg flex-col flex gap-1 md:text-xl">
           Senha
           <div className="relative w-full">
             <input
@@ -88,7 +88,7 @@ export const Forms = () => {
           </div>
           {errors.senha && <span className="text-red-500 text-xs">{errors.senha.message}</span>}
         </label>
-        <Button className="h-10 w-48 mt-6 " type="submit">
+        <Button className="h-10 w-48 mt-2 " type="submit">
           Logar
         </Button>
       </div>

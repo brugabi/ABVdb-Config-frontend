@@ -1,8 +1,10 @@
 import { Footer } from "../components/Footer"
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import Header from "../components/Header"
 import { Bloco } from "../components/Bloco"
-
+import gearsSvg from "../assets/svgs/gears.svg"
+import databaseSvg from "../assets/svgs/database.svg"
+import toolsFolderSvg from "../assets/svgs/tools-folder.svg"
 export const Home = () => {
     const navigate = useNavigate();
     const onBlockClick = (url : string) => {
@@ -16,11 +18,11 @@ export const Home = () => {
             <div className=" h-full w-3/6 shadow-xl 2xl:w-2/6">
             <Bloco className="h-3/6 w-full bg-secondary flex-col font-bold" 
                              title="Comece com o pipeline de obtenção dos dados!"
-                             img="src\assets\svgs\gears.svg"></Bloco>
+                             img={gearsSvg}></Bloco>
 
             <Bloco className="h-3/6 w-full bg-secondary-light flex-col-reverse font-bold"
                              title="Ou acesse aqui o ABVdb!" 
-                             img="src\assets\svgs\database.svg"></Bloco>
+                             img={databaseSvg}></Bloco>
     </div>
             <div className="h-full w-3/6 text-white bg-primary cursor-pointer hover:bg-primary-light shadow-xl
             2xl:w-2/6"
@@ -30,7 +32,7 @@ export const Home = () => {
                              title="Não era o que procurava? Acesse aqui mais opções"
                              img="src/assets/svgs/file-circle-question-solid.svg"></Bloco>
             <Bloco className="h-3/6 w-full flex-col"
-                             img="src\assets\svgs\tools-folder.svg"></Bloco>
+                             img={toolsFolderSvg}></Bloco>
             
             </div>
             
