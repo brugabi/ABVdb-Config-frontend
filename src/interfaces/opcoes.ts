@@ -1,7 +1,8 @@
+export type OptionsType = "link" | "modal" | "rota"
+
 export interface OpcaoI {
     title: string,
     img: string,
-    rota?:string,
-    link?:string,
-    modal?:boolean
+    type: OptionsType,
+    action?: string
 }

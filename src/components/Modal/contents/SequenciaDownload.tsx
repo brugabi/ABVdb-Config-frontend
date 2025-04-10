@@ -1,15 +1,11 @@
-import { Button } from "../components/Button"
-import { Footer } from "../components/Footer"
-import Header from "../components/Header"
-import { sequencias } from "../constants/sequencias"
+import { Button } from "../../Button"
 
-export const SequenciaDonwload = () => {
+import { sequencias } from "../../../constants/sequencias"
 
-
+export const SequenciaDownload = () => {
     return (
-        <div className="h-screen w-full flex flex-col justify-center text-center items-center bg-neutral">
-            <Header></Header>
-            <h2 className="font-semibold border-b-2 w-1/5 pb-2 mt-4 text-3xl border-b-secondary-light">
+        <>
+            <h2 className="font-semibold border-b-2  pb-2 mt-4 text-xl border-b-secondary-light">
                 Selecione a sequência que deseja baixar
             </h2>
             <div className="h-full mt-8 flex">
@@ -22,7 +18,7 @@ export const SequenciaDonwload = () => {
                     Baixar
                 </Button>
             </div>
-            <Footer></Footer>
-        </div>
+        
+        </>
     )
 }

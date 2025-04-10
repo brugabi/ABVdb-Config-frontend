@@ -1,8 +1,7 @@
 import {BrowserRouter, Route, Routes } from "react-router-dom"
 import { Login } from "./pages/Login"
 import { Home } from "./pages/Home"
-import { Opcoes } from "./pages/Opcoes"
-import { SequenciaDonwload } from "./pages/SequenciaDownload"
+import { Ferramentas } from "./pages/Ferramentas"
 import { ErrorPage } from "./pages/ErrorPage"
 import { useState } from "react"
 
@@ -21,8 +20,7 @@ function App() {
     <Routes>
         <Route element={<Login></Login>} path="/login"></Route>
         <Route element={<Home></Home> } path="/"/>
-        <Route element={<Opcoes></Opcoes>} path="/opcoes"></Route>
-        <Route element={<SequenciaDonwload></SequenciaDonwload>} path="/sequenciasbaixar"></Route>
+        <Route element={<Ferramentas></Ferramentas>} path="/ferramentas"></Route>
         <Route element={<ErrorPage></ErrorPage>} path="*"></Route>
     </Routes>
     </BrowserRouter>

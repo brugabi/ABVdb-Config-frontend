@@ -7,6 +7,7 @@ import databaseSvg from "../assets/svgs/database.svg"
 import toolsFolderSvg from "../assets/svgs/tools-folder.svg"
 export const Home = () => {
     const navigate = useNavigate();
+    
     const onBlockClick = (url : string) => {
         navigate(url);
     }
@@ -26,7 +27,7 @@ export const Home = () => {
     </div>
             <div className="h-full w-3/6 text-white bg-primary cursor-pointer hover:bg-primary-light shadow-xl
             2xl:w-2/6"
-            onClick={() => onBlockClick("/opcoes")} >
+            onClick={() => onBlockClick("/ferramentas")} >
             <Bloco className="h-3/6 w-full flex-col-reverse"
                              
                              title="Não era o que procurava? Acesse aqui mais opções"
