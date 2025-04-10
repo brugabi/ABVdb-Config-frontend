@@ -49,7 +49,7 @@ export const Forms = () => {
   },[showPassword])
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex justify-around flex-col w-full h-full">
+    <form onSubmit={handleSubmit(onSubmit)} className="flex justify-around flex-col w-full h-full max-w-xl">
       <div className="items-center justify-center flex flex-col">
         <img  src={userIcon} className=" size-7/12 object-contain rounded-full " />
         <h2 className="border-b-4 rounded pb-2 text-4xl inline-block border-primary-light">Login</h2>
