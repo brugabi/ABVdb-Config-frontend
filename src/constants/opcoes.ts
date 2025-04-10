@@ -1,12 +1,6 @@
-interface Opcao {
-    title: string,
-    img: string,
-    rota?:string,
-    link?:string,
-    modal?:boolean
-}
+import { OpcaoI } from "../interfaces/opcoes"
 
-export const Opt:Opcao[] = [{
+export const Opt:OpcaoI[] = [{
     title: "Repositório de Arquivos",
     img: "src/assets/driveIcon.png",
     link: "https://drive.google.com/drive/folders/1jhEb0sqxsORQl8WzSihZt9Bx2GKch176?usp=sharing"
@@ -19,7 +13,8 @@ export const Opt:Opcao[] = [{
 {
     title: "Baixar sequências XML",
     img: "src/assets/svgs/download-window-svgrepo-com.svg",
-    rota: "/sequenciasbaixar"
+    //rota: "/sequenciasbaixar"
+    modal: true
 
 },
 {

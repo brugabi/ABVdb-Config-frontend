@@ -3,7 +3,7 @@ import { Bloco } from "../components/Bloco"
 import { Footer } from "../components/Footer"
 import { Opt } from "../constants/opcoes"
 import Header from "../components/Header"
-import dnaBackground from "../assets/svgs/iconePrincipal.svg"
+import { Modal, ModalHeader, ModalBody, ModalContent, ModalFooter } from "@heroui/modal"
 
 export const Opcoes = () => {
     const navigate = useNavigate();
