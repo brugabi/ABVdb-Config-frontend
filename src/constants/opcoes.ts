@@ -3,9 +3,10 @@ interface Opcao {
     img: string,
     rota?:string,
     link?:string,
+    modal?:boolean
 }
 
-export const Opt = [{
+export const Opt:Opcao[] = [{
     title: "Repositório de Arquivos",
     img: "src/assets/driveIcon.png",
     link: "https://drive.google.com/drive/folders/1jhEb0sqxsORQl8WzSihZt9Bx2GKch176?usp=sharing"
