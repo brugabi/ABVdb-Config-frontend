@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { Bloco } from "../components/Bloco"
 import { Footer } from "../components/Footer"
-import { Opt } from "../constants/opcoes"
+import { Opt } from "../constants/options"
 import Header from "../components/Header"
 import { OptionsType } from "../interfaces/opcoes"
 import { useState } from "react"
