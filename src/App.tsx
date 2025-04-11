@@ -21,9 +21,12 @@ function App() {
     <BrowserRouter>
     <Routes>
       
+        <Route element={<ProtectedRoute></ProtectedRoute>}>
+          <Route element={<Home></Home>} path="/"/>
+          <Route element={<Ferramentas></Ferramentas>} path="/ferramentas"></Route>
+        </Route>
+
         <Route element={<Login></Login>} path="/login"></Route>
-        <Route element={<ProtectedRoute><Home></Home></ProtectedRoute>} path="/"/>
-        <Route element={<ProtectedRoute><Ferramentas></Ferramentas></ProtectedRoute>} path="/ferramentas"></Route>
         <Route element={<ErrorPage></ErrorPage>} path="*"></Route>
     </Routes>
     </BrowserRouter>
