@@ -28,7 +28,7 @@ export const Forms = () => {
     console.log(data);
     if (user) {
       console.log("Usuário encontrado");
-      navigate("/home");
+      navigate("/");
     } else {
       alert("Usuário ou senha inválidos");
       reset();
