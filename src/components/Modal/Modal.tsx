@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 
 type ModalProps = {
   isOpen: boolean;
@@ -10,6 +10,19 @@ type ModalProps = {
 export const Modal = ({ isOpen, title, children, onClose }: ModalProps) => {
   if (!isOpen) return null;
 
+  useEffect(() => {
+    function handleClose(key: KeyboardEvent) {
+      console.log(key);
+      if (key.code === "Escape") onClose();
+    }
+  
+    window.addEventListener("keydown", handleClose);
+  
+    return () => {
+      window.removeEventListener("keydown", handleClose);
+    };
+  },[onClose])
+  
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
       <div className="bg-white dark:bg-neutral-900 rounded-xl w-full max-w-lg p-6 relative shadow-lg">
