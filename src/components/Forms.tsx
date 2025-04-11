@@ -4,6 +4,7 @@ import { usuario } from "../api/usuario";
 import { Button } from "./Button";
 import { useEffect, useRef, useState } from "react";
 import userIcon from "../assets/icone.png"
+import { useUser } from "../hooks/useUser";
 interface FormData {
   email: string;
   senha: string;
@@ -14,6 +15,7 @@ export const Forms = () => {
   const users = usuario;
   const [showPassword,setShowPassword] = useState(false);
   const imgRef = useRef<HTMLImageElement|null>(null);
+  const { setUser } = useUser();
   const {
     register,
     handleSubmit,
@@ -28,6 +30,7 @@ export const Forms = () => {
     console.log(data);
     if (user) {
       console.log("Usuário encontrado");
+      setUser(_ => user)
       navigate("/");
     } else {
       alert("Usuário ou senha inválidos");

@@ -24,7 +24,7 @@ export const Modal = ({ isOpen, title, children, onClose }: ModalProps) => {
   
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
-      <div className="bg-white dark:bg-neutral-900 rounded-xl w-full max-w-lg p-6 relative shadow-lg">
+      <div className="w-4/5 bg-white dark:bg-neutral-900 rounded-xl sm:w-full max-w-lg p-6 relative shadow-lg">
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-gray-500 hover:text-gray-800 dark:hover:text-white"
