@@ -1,16 +1,21 @@
 import { Footer } from "../components/Footer"
 import { useNavigate } from "react-router-dom"
-import Header from "../components/Header"
 import { Bloco } from "../components/Bloco"
+import Header from "../components/Header"
 import gearsSvg from "../assets/svgs/gears.svg"
 import databaseSvg from "../assets/svgs/database.svg"
 import toolsFolderSvg from "../assets/svgs/tools-folder.svg"
+import { useEffect } from "react"
 export const Home = () => {
     const navigate = useNavigate();
     
     const onBlockClick = (url : string) => {
         navigate(url);
     }
+
+    useEffect(() => {
+        
+    },[])
     return(
         <div className="h-screen w-full flex flex-col justify-center bg-neutral text-3xl">
             <Header></Header>

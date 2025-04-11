@@ -4,7 +4,7 @@ import { Home } from "./pages/Home"
 import { Ferramentas } from "./pages/Ferramentas"
 import { ErrorPage } from "./pages/ErrorPage"
 import {  useState } from "react"
-import { UserContext } from "./contexts/UserContext"
+import { UserContext, UserProvider } from "./contexts/UserContext"
 
 interface user{
   email: string,
@@ -16,7 +16,7 @@ function App() {
 
   return (
   
-    <UserContext>
+    <UserProvider>
     <BrowserRouter>
     <Routes>
       
@@ -26,7 +26,7 @@ function App() {
         <Route element={<ErrorPage></ErrorPage>} path="*"></Route>
     </Routes>
     </BrowserRouter>
-    </UserContext>
+    </UserProvider>
     
     
   )
